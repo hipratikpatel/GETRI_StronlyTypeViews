@@ -1,0 +1,23 @@
+﻿@model IEnumerable<GETRI_StronlyTypeViews.Models.Customer>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Customer Id</</th>
+            <th>Customer Name</th>
+            <th>Customer Address</th>
+            <th>Customer Contact</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CustomerId</td>
+                <td>@item.CustomerName</td>
+                <td>@item.CustomerAddress</td>
+                <td>@item.CustomerPhone</td>
+            </tr>
+        }
+    </tbody>
+</table>
